@@ -1,0 +1,9 @@
+feature,Entertainment,Music,Howto & Style
+title_len,-0.005,-0.016,-0.004
+word_count,-0.028,0.077,0.034
+caps_ratio,0.527*,0.916,0.652*
+exclaim_cnt,0.164,-0.330,0.171
+question_cnt,-0.179,-0.156,0.237
+has_number,0.092,-0.507*,-0.218
+has_bracket,0.485*,0.431*,0.580*
+tag_cnt,0.019*,0.016*,0.004

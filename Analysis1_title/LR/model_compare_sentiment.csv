@@ -1,0 +1,3 @@
+model,rand_R2_train,rand_R2_test,rand_RMSE_test,time_R2_test,time_RMSE_test
+M0 (객관만),0.1186,0.1188,1.752,-1.2711,1.8397
+M1 (+감성),0.121,0.1166,1.7542,-1.2706,1.8395
