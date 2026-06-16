@@ -13,7 +13,7 @@ plt.rcParams['figure.dpi'] = 150
 # stdout UTF-8 force (Windows cp949 workaround)
 sys.stdout.reconfigure(encoding='utf-8')
 
-df = pd.read_csv('cleaned_USvideos.csv')
+df = pd.read_csv('../../dataset/cleaned_USvideos.csv')
 print(f"Data loaded: {df.shape[0]} rows x {df.shape[1]} cols\n")
 
 WEEKDAY = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']

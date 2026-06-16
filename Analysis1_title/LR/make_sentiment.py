@@ -19,7 +19,7 @@ OUT = Path(".")
 feat = pd.read_csv(OUT / "features_partB.csv", parse_dates=["publish_time"])
 
 # title은 features_partB.csv에 없으므로 Phase2 정제본에서 video_id로 가져온다
-titles = pd.read_csv(Path("../EDA/EDA_Phase2/cleaned_USvideos.csv"),
+titles = pd.read_csv(Path("../../dataset/cleaned_USvideos.csv"),
                      usecols=["video_id", "title"]).drop_duplicates("video_id")
 feat = feat.merge(titles, on="video_id", how="left")
 print("title 결측:", feat["title"].isna().sum())

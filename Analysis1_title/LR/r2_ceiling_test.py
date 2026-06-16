@@ -14,7 +14,7 @@ from sklearn.preprocessing import OneHotEncoder
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 
-df = pd.read_csv(Path("../EDA/EDA_Phase2/cleaned_USvideos.csv"))
+df = pd.read_csv(Path("../../dataset/cleaned_USvideos.csv"))
 df = df.sort_values("views").drop_duplicates("video_id", keep="last").reset_index(drop=True)
 
 title_obj = ["title_len", "caps_ratio", "exclaim_cnt", "question_cnt",

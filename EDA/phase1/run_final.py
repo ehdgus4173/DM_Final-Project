@@ -22,7 +22,7 @@ ACCENT   = '#1A7F5A'
 GRAY     = '#C8CDD6'
 WEEKDAY  = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
 
-df = pd.read_csv('cleaned_USvideos.csv')
+df = pd.read_csv('../../dataset/cleaned_USvideos.csv')
 
 cat_stats = (
     df.groupby('category')['views']
@@ -230,7 +230,7 @@ print("=" * 60)
 print("TASK 3: Handoff validation — cleaned_USvideos.csv")
 print("=" * 60)
 
-df_v = pd.read_csv('cleaned_USvideos.csv')
+df_v = pd.read_csv('../../dataset/cleaned_USvideos.csv')
 issues = []
 
 # 1. Shape
