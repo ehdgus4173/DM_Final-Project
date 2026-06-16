@@ -1,0 +1,4 @@
+model,rand_R2_train,rand_R2_test,rand_RMSE_test,time_R2_test,cv_R2_mean,cv_R2_std
+M_content,0.1186,0.1188,1.752,-1.2711,0.1067,0.0168
+M_content+chan (OOF),0.342,0.2956,1.5664,-0.568,0.3229,0.0207
+M_content+naive (누수),0.7539,0.7366,0.9579,0.3623,0.7481,0.0218
