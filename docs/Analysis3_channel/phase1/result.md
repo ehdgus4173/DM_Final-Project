@@ -44,7 +44,7 @@
 - **ΔR²(CV)=+0.216, std≈0.02** → 0이 ±std 밖 = 견고한 개선(태그·감성의 ΔR²≈0과 정반대).
 - **naive vs OOF 격차 +0.44** = same-video 누수 낙관편향. OOF만 헤드라인(정직성).
 
-### 2-3. 채널 계수 (OLS, `compare_channel.py`)
+### 2-3. 채널 계수 (OLS, `step3_channel_analysis.ipynb`)
 
 | feature | coef | p | 해석 |
 |---|---|---|---|
@@ -96,15 +96,17 @@
 
 | 파일 | 내용 |
 |---|---|
-| `Analysis3_channel/build_channel_features.py` | Step 0+1: 복구·머지 + OOF 인코딩 |
-| `Analysis3_channel/compare_channel.py` | Step 2+3: 누수 점검 + 모델 비교 |
-| `Analysis3_channel/rf_channel.py` | Step 4: RF + permutation importance |
-| `Analysis3_channel/viz_channel.py` | Step 5: 발표 시각화 |
-| `step0_channel_merge.csv` | channel_title 머지본 (6249×27) |
-| `step1_channel_features.csv` | 채널 피처(OOF/naive/freq) |
-| `step3_model_compare_channel.csv` | 모델별 R²/RMSE/CV |
-| `step4_rf_importance.csv` + `step4_fig_importance.png` | RF permutation importance |
-| `step5_fig_channel_r2.png` | R² 점프 + 잔여분산 (발표용) |
+| `step0_channel_analysis.ipynb` | Step 0: channel_title 복구·머지 |
+| `step1_channel_analysis.ipynb` | Step 1: OOF target encoding (채널 피처) |
+| `step2_channel_analysis.ipynb` | Step 2: 누수 점검 (naive vs OOF) |
+| `step3_channel_analysis.ipynb` | Step 3: M_content vs M_content+channel 비교 |
+| `step4_channel_analysis.ipynb` | Step 4: RF + permutation importance |
+| `step5_channel_analysis.ipynb` | Step 5: 발표 시각화 |
+| `out/step0_channel_merge.csv` | channel_title 머지본 (6249×27) |
+| `out/step1_channel_features.csv` | 채널 피처(OOF/naive/freq) |
+| `out/step3_model_compare_channel.csv` | 모델별 R²/RMSE/CV |
+| `out/step4_rf_importance.csv` + `out/step4_fig_importance.png` | RF permutation importance |
+| `out/step5_fig_channel_r2.png` | R² 점프 + 잔여분산 (발표용) |
 
 ---
 
